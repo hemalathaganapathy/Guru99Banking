@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke Suite">
+    <test parallel="methods" thread-count="2" name="Smoke test run">
+        <classes>
+            <class name="Guru99loginpage.Login_Validation">
+                <methods>
+                    <include name="Launch_Browser"/>
+                    <include name = "CheckLogin_Credentials"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>
